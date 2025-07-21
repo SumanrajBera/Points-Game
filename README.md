@@ -65,7 +65,7 @@ cd backend
 npm install
 touch .env
 # Fill in the .env file with your own values
-npm run dev
+node server.js
 ```
 
 ### 3. Set up Frontend
