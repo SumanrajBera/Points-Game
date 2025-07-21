@@ -27,7 +27,7 @@ export default function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<ProtectedRoute />}>
-              <Route path="/" element={<Dashboard />} />
+              <Route index element={<Dashboard />} />
               <Route path="/leaderboard" element={<Leaderboard />} />
               <Route path='/ongoing' element={<Ongoing />} />
               <Route path='/games/:gameId' element={<GameView />} />
