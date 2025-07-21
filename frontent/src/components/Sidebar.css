@@ -1,0 +1,50 @@
+.sidebar {
+    background-color: #D9F4F5;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s ease;
+    font-size: 1.2rem;
+}
+
+.main_links {
+    flex: 1;
+}
+
+.logout-btn {
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    border: 0;
+    font-size: 1.2rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.logout-btn>p {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.sidebar_links {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.6rem;
+}
+
+.sidebar_links:hover {
+    background-color: #a8f1f4fb;
+}
+
+
+@media(width < 600px) {
+    .sidebar {
+        position: fixed;
+        height: calc(100vh - 60px);
+    }
+
+    .sidebar.collapsed {
+        transform: translateX(-100%);
+    }
+}

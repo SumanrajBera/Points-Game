@@ -1,0 +1,22 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #0F828C;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuBtn {
+    opacity: 0;
+}
+
+@media(width < 600px) {
+    .menuBtn {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #78B9B5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    padding-top: 60px;
+    flex: 1;
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ddd;
+}
+
+.content {
+    flex: 1;
+    max-height: calc(100vh - 120px);
+    padding: 1rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+@media(width < 600px) {
+    .content {
+        max-height: none;
+        overflow-y: visible;
+    }
+}

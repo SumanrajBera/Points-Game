@@ -1,0 +1,26 @@
+h2 {
+    margin-bottom: 0;
+}
+
+
+.gameCards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.gameCard {
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+@media (width < 600px) {
+    .gameCards {
+        width: 100%;
+        justify-content: center;
+    }
+}
